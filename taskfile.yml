@@ -16,7 +16,7 @@ tasks:
       - uv run src/main.py
 
   tdd_demo:test:
-    desc: Test main
+    desc: Tests the Calculator
     dir: tdd_demo
     cmds:
       - uv run pytest
