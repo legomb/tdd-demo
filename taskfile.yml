@@ -1,0 +1,15 @@
+version: '3'
+
+dotenv: ['.env', '{{.ENV}}/.env.', '{{.HOME}}/.env']
+
+tasks:
+  default:
+    desc: List tasks (default)
+    cmds:
+      - cmd: task -l
+        silent: true
+
+  demo:run:
+    desc: Runs main
+    cmds:
+      - uv run tdd-demo/src/main.py
