@@ -9,7 +9,13 @@ tasks:
       - cmd: task -l
         silent: true
 
-  demo:run:
+  tdd_demo:run:
     desc: Runs main
     cmds:
       - uv run tdd-demo/src/main.py
+
+  tdd_demo:test:
+    desc: Test main
+    dir: tdd_demo
+    cmds:
+      - uv run pytest
