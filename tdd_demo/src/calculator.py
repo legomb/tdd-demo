@@ -1,6 +1,6 @@
 class Calculator:
 	def add(x: int, y:int):
-		pass
+		return x + y
 
 	def subtract(x: int, y:int):
 		pass
